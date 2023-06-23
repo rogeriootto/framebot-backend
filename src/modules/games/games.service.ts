@@ -16,7 +16,7 @@ export class GamesService {
   }
 
   findAll() {
-    return this.gamesRepository.findOneBy({ name: 'uni' });
+    return this.gamesRepository.findOneBy({ name: 'BBTAG' });
   }
 
   findOne(id: number) {
