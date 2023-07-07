@@ -7,6 +7,7 @@ import { Games } from './modules/games/entities/game.entity';
 import { CharactersModule } from './modules/characters/characters.module';
 import { FramedataModule } from './modules/framedata/framedata.module';
 import { Characters } from './modules/characters/entities/character.entity';
+import { Framedata } from './modules/framedata/entities/framedatum.entity';
 
 @Module({
   imports: [
@@ -17,7 +18,7 @@ import { Characters } from './modules/characters/entities/character.entity';
       username: 'postgres',
       password: '123456',
       database: 'framebot-DB',
-      entities: [Games, Characters],
+      entities: [Games, Characters, Framedata],
       synchronize: true,
     }),
     GamesModule,
