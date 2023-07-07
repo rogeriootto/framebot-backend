@@ -16,7 +16,11 @@ export class GamesService {
   }
 
   findAll() {
-    return this.gamesRepository.findOneBy({ name: 'BBTAG' });
+    return this.gamesRepository.findOneByOrFail({ name: 'BBTAG' });
+  }
+
+  findGame(id:number){
+    return this.gamesRepository.findOneByOrFail({id});
   }
 
   findOne(id: number) {
