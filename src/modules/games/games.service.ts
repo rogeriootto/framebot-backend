@@ -16,11 +16,11 @@ export class GamesService {
   }
 
   findAll() {
-    return this.gamesRepository.findOneByOrFail({ name: 'BBTAG' });
+    return this.gamesRepository.find();
   }
 
-  findGame(id:number){
-    return this.gamesRepository.findOneByOrFail({id});
+  findGame(id: number) {
+    return this.gamesRepository.findOneByOrFail({ id });
   }
 
   findOne(id: number) {
