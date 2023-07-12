@@ -7,4 +7,7 @@ export class Games {
 
   @Column({ nullable: true })
   name: string;
+
+  @Column({ nullable: true })
+  imgurl: string;
 }
